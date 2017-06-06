@@ -13,3 +13,13 @@
   padding-left:1.5em;
   list-style: square;
 }
+
+
+#header h1 {
+  color:#fff;
+  font-style: oblique;
+}
+
+#header h1 strong{
+  font-style: normal;
+}
