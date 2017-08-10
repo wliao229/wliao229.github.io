@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.7)  27 JUL 2017 22:31
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.7)  10 AUG 2017 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,6 +978,12 @@ LaTeX Font Info:    Font shape `TU/OptimaRegular(0)/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 129.
 LaTeX Font Info:    Font shape `TU/OptimaRegular(0)/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 129.
+
+Overfull \hbox (10.21028pt too wide) in paragraph at lines 131--132
+\TU/HoeflerText(0)/m/n/10.95 cesses; Social Networks; Sociality of Affect/Emoti
+on; Communication Technology; Quan-
+ []
+
 Package marginnote Info: Margin note 1.1 is on absolute page 1
 (marginnote)              on input line 153.
 Package marginnote Info: right page because not two side mode on input line 153
@@ -1083,7 +1089,7 @@ Package marginnote Info: right page because not two side mode on input line 268
 .
 Package marginnote Info: xpos seems to be 322.54317pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 268.
-Package marginnote Info: Margin note 3.5 is on absolute page 4
+Package marginnote Info: Margin note 3.5 is on absolute page 3
 (marginnote)              on input line 274.
 Package marginnote Info: right page because not two side mode on input line 274
 .
@@ -1119,4 +1125,4 @@ Here is how much of TeX's memory you used:
  319 hyphenation exceptions out of 8191
  38i,9n,69p,10342b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on cv.xdv (4 pages, 71872 bytes).
+Output written on cv.xdv (4 pages, 70056 bytes).
