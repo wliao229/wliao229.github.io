@@ -43,6 +43,7 @@
 \newcommand{\years}[1]{\leavevmode\marginnote{\scriptsize #1}} % New command for including margin years
 \renewcommand*{\raggedleftmarginnote}{}
 % \setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\renewcommand*{\marginfont}{\sffamily}
 \reversemarginpar
 
 \usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Wang Liao - vita},pdfauthor={Wang Liao}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
@@ -50,11 +51,22 @@
 
 
 % Wang's additional modification
+\usepackage{fancyhdr}
+
 \usepackage{multicol}
 \usepackage{academicons, fontawesome}
 \usepackage{hanging}
 
-\usepackage{parskip}
+\usepackage[parfill]{parskip}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textsf{Wang Liao | CV - Page \thepage}}
+\renewcommand{\headrulewidth}{0pt}
+
+% \usepackage{titlesec}
+% \titlespacing*{\section}{0pt}{20pt plus 0pt minus 0pt}{10pt plus 0pt minus 0pt}
 
 
 %----------------------------------------------------------------------------------------
@@ -78,17 +90,17 @@
 \setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
 \newcommand{\amper}{{\fontspec[Scale=.95]{Times}\selectfont\itshape\&}} % Custom ampersand character
 \sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
-\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+\subsectionfont{\sffamily\mdseries\normalsize} % Set font options for subsections
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
+% \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 %----------------------------------------------------------------------------------------
 %	CONTACT AND GENERAL INFORMATION SECTION
 %----------------------------------------------------------------------------------------
-
+\thispagestyle{empty}
 
 \begin{multicols}{2}
 [
@@ -115,14 +127,7 @@ Ithaca, NY \texttt{14850}\\
 
 %------------------------------------------------
 
-% Born: March 12, 1879---Ulm, Germany\\ % Your date of birth
-% Nationality: German/American % Your nationality
-
-%------------------------------------------------
-
 % \section*{Current position}
-
-% \emph{Emeritus Professor}, Institute for Advanced Study, Princeton % Your current or previous employment position
 
 %------------------------------------------------
 
@@ -132,7 +137,7 @@ Communication in Multilevel Social Processes (Interpersonal, Group, and Orgnizat
 Medium Effects and Communication Technologies\\
 Relational and Group Processes\\  
 Social and Communication Networks\\ 
-Social Functions of Affect and Emotion\\ 
+Social Functionality of Affect and Emotion\\ 
 Quantitative Methods % Your primary areas of research interest
 
 %----------------------------------------------------------------------------------------
@@ -140,14 +145,6 @@ Quantitative Methods % Your primary areas of research interest
 %----------------------------------------------------------------------------------------
 
 % \section*{Appointments held}
-
-% \years{1903-1908}Swiss Patent Office, Bern\\
-% \years{1908-1911}University of Bern\\
-% \years{1911-1912}University of Zürich\\
-% \years{1912-1914}Charles University of Prague\\
-% \years{1914-1932}Prussian Academy of Sciences, Berlin\\
-% \years{1920-1930}University of Leiden\\
-% \years{1932-1955}Institute for Advanced Study, Princeton
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -177,41 +174,45 @@ BA in Advertising \years{2009} \\
 %	PUBLICATIONS AND TALKS SECTION
 %----------------------------------------------------------------------------------------
 
-\section*{Journal Articless}
-
-% \subsection*{journal article}
+\section*{Journal Articiles}
 
 \begin{hangparas}{.25in}{1}
-\underline{Liao, W.}, \years{2016}  McComas, K. A., \& Yuan, Y. C. (2016). The influence of unrestricted information exchange on willingness to share information with outsiders. \textsl{Human Communication Research}. first published online. \href{http://doi.org/10.1111/hcre.12104}{doi:10.1111/hcre.12104} 
+    
+    \textbf{Liao, W.}, McComas, K. A., \& Yuan, Y. C. (2017). \years{2017} The influence of unrestricted information exchange on willingness to share information with outsiders. \textsl{Human Communication Research, 43}, 256–275. \href{http://doi.org/10.1111/hcre.12104}{doi:10.1111/hcre.12104}  
 
-    Thoemmes, F., \underline{Liao, W.}, \& Jin, Z. (2016). The analysis of the regression-discontinuity design in R. \textsl{Journal of Educational and Behavioral Statistics}, 42(3), 341-360. \href{http://doi.org/10.3102/1076998616680587}{doi:10.3102/\\1076998616680587}
+    Thoemmes, F., \textbf{Liao, W.}, \& Jin, Z. (2017). The analysis of the regression-discontinuity design in R. \textsl{Journal of Educational and Behavioral Statistics, 42}, 341-360. \href{http://doi.org/10.3102/1076998616680587}{doi:10.3102/\\1076998616680587} 
 
-    \underline{Liao, W.}, Bazarova, N. N., \& Yuan, Y. C. (2016). Expertise judgment and communication accommodation in linguistic styles in computer-mediated and face-to-face groups. \textsl{Communication Research}. first published online. \href{http://doi.org/10.1177/0093650215626974}{doi:10.1177/0093650215626974}
+    \textbf{Liao, W.}, Bazarova, N. N., \& Yuan, Y. C. (2016). \years{2016} Expertise judgment and communication accommodation in linguistic styles in computer-mediated and face-to-face groups. \textsl{Communication Research}. Advance online publication. \href{http://doi.org/10.1177/0093650215626974}{doi:10.1177/0093650215626974}
 
-    \underline{Liao, W.}, Yuan, Y. C., \& McComas, K. A. (2016). Communal risk information sharing: motivations behind voluntary information sharing for reducing interdependent risks in a community. \textsl{Communication Research}. first published online. \href{http://doi.org/10.1177/0093650215626981}{doi:10.1177/\\0093650215626981}
+    \textbf{Liao, W.}, Yuan, Y. C., \& McComas, K. A. (2016). Communal risk information sharing: motivations behind voluntary information sharing for reducing interdependent risks in a community. \textsl{Communication Research}. Advance online publication. \href{http://doi.org/10.1177/0093650215626981}{doi:10.1177/\\0093650215626981}
 
-\end{hangparas}
+    \vspace{\parskip}
+\end{hangparas} 
 
 %------------------------------------------------
 
-\section*{Manuscripts under Review}
+\subsection*{manuscripts under review}
 
 \begin{hangparas}{.25in}{1}
 
-\underline{Liao, W.}, Bazarova, N. N., \& Yuan, Y. C. Unpacking channel effects: A social relations analysis framework for studying individual, dyadic, and group processes in computer-mediated communication. \textsl{(revise \& resubmit)}
+    \textbf{Liao, W.}, Bazarova, N. N., \& Yuan, Y. C. Unpacking medium effects: Using the social relations model to study social psychological aspects of in computer-mediated communication. \textsl{(revise \& resubmit)}
 
-Margolin, D. \& \underline{Liao, W.}~Emotional ‘group talk’: A communication logic for self-organized solidarity among national football league fans on Twitter. \textsl{(under review)}
+    Margolin, D. \& \textbf{Liao, W.}~Emotional ‘group talk’: A communication logic for self-organized solidarity among national football league fans on Twitter. \textsl{(under review)}
 
-Yuan, Y. C., \underline{Liao, W.}, \& Bazarova, N. N. Judging expertise through communication styles in intercultural collaboration \textsl{(under review)}
+    Yuan, Y. C., \textbf{Liao, W.}, \& Bazarova, N. N. Judging expertise through communication styles in intercultural collaboration \textsl{(under review)}
+
+    \vspace{\parskip}
 
 \end{hangparas}
-
+\vspace{+\parskip}
 %------------------------------------------------
 
 \section*{Book Chapter}
 \begin{hangparas}{.25in}{1}
 
-    \underline{Liao, W.}, \years{2016}  MacDonald, P., \& Yuan, Y. C. (2016). The impact of communication behaviors on expertise recognition in intercultural collaboration. In J. Treem \& P. Leonardi (Eds.), Communication, Expertise, and Organizing. Oxford, UK: Oxford University Press
+    \textbf{Liao, W.}, \years{2016}  MacDonald, P., \& Yuan, Y. C. (2016). The impact of communication behaviors on expertise recognition in intercultural collaboration. In J. Treem \& P. Leonardi (Eds.), Communication, Expertise, and Organizing. Oxford, UK: Oxford University Press
+
+    \vspace{\parskip}
 
 \end{hangparas}
 
@@ -220,25 +221,28 @@ Yuan, Y. C., \underline{Liao, W.}, \& Bazarova, N. N. Judging expertise through 
 \section*{Conference Presentations / Proceedings}
 \begin{hangparas}{.25in}{1}
 
-\underline{Liao, W.}, \years{2017} Bazarova, N. N., \& Yuan, Y. C. (2017, May). Development and application of an analytical framework for analyzing social behaviors with social relations models in CMC Groups. Poster presented at the 67th Annual Conference of the International Commmunication Association, San Diego, CA, USA
+    \textbf{Liao, W.}, \years{2017} Bazarova, N. N., \& Yuan, Y. C. (2017, May). Development and application of an analytical framework for analyzing social behaviors with social relations models in CMC Groups. Poster presented at the 67th Annual Conference of the International Commmunication Association, San Diego, CA, USA
 
-\underline{Liao, W.}, \years{2016} McComas, K. A., \& Yuan, Y. C. (2016, November). The influence of unrestricted information exchange on willingness to share risk information with outsiders. Paper presented at the National Communication Association 102th Annual Convention, Philadelphia, PA, USA
+    \textbf{Liao, W.}, \years{2016} McComas, K. A., \& Yuan, Y. C. (2016, November). The influence of unrestricted information exchange on willingness to share risk information with outsiders. Paper presented at the National Communication Association 102th Annual Convention, Philadelphia, PA, USA
 
-Margolin, D., \years{2015} \underline{Liao, W.}, \& Lin, Y.-R. (2015). Conversing in reflective glory: A systematic study using national Football League games. Proceedings of ICWSM’15
+    Margolin, D., \years{2015} \textbf{Liao, W.}, \& Lin, Y.-R. (2015). Conversing in reflective glory: A systematic study using national Football League games. Proceedings of ICWSM’15
 
-\underline{Liao, W.}, Bazarova, N. N., \& Yuan, Y. C. (2015, May). Expertise judgment and communication accommodation in CMC and FtF groups. Paper presented at the 65th Annual Conference of the International Communication Association, San Juan, Puerto Rico
+    \textbf{Liao, W.}, Bazarova, N. N., \& Yuan, Y. C. (2015, May). Expertise judgment and communication accommodation in CMC and FtF groups. Paper presented at the 65th Annual Conference of the International Communication Association, San Juan, Puerto Rico
 
-\underline{Liao, W.}, Yuan, Y. C., \& McComas, K. A. (2015, August). Communal risk information sharing: motivations behind voluntary information sharing of late blight infection in U.S. agricultural communities. \textsl{Top 2 faculty paper of the CommSHER division} at the Annual Conference of the Association for Education in Journalism and Mass communication, San Francisco, CA, USA
+    \textbf{Liao, W.}, Yuan, Y. C., \& McComas, K. A. (2015, August). Communal risk information sharing: motivations behind voluntary information sharing of late blight infection in U.S. agricultural communities. \textsl{Top 2 faculty paper of the CommSHER division} at the Annual Conference of the Association for Education in Journalism and Mass communication, San Francisco, CA, USA
 
-\underline{Liao, W.} \years{2012-2014}\& Liu, Y. (2014, May). Personalized public goods production in social networking site. Paper presented at the 63th Annual Conference of the International Communication Association, Seattle, WA, USA
+    \textbf{Liao, W.} \years{2012-2014}\& Liu, Y. (2014, May). Personalized public goods production in social networking site. Paper presented at the 63th Annual Conference of the International Communication Association, Seattle, WA, USA
 
-Theommes, F. \& \underline{Liao, W.} (2014, May). The Markov equivalence class of the mediation model. Paper presented at the Modern Modeling Method Conference. Storrs, CT, USA
+    Theommes, F. \& \textbf{Liao, W.} (2014, May). The Markov equivalence class of the mediation model. Paper presented at the Modern Modeling Method Conference. Storrs, CT, USA
 
-\underline{Liao, W.} \& Liu, Y. (2014, May). Personalized public goods production in social networking site. Paper presented at the 63th Annual Conference of the International Communication Association, Seattle, WA, USA
+    \textbf{Liao, W.} \& Liu, Y. (2014, May). Personalized public goods production in social networking site. Paper presented at the 63th Annual Conference of the International Communication Association, Seattle, WA, USA
 
-\underline{Liao, W.} (2013, Nov). The digital legitimation of stratification. National Communication Association 99th Annual Convention, Washington, D.C., USA
+    \textbf{Liao, W.} (2013, Nov). The digital legitimation of stratification. National Communication Association 99th Annual Convention, Washington, D.C., USA
 
-Thoemmes, F. \& \underline{Liao, W.} (2013, May). Propensity score matching (with multilevel data) using SPSS and R. Paper presented at the Modern Modeling Methods Conference, Storrs, CT, USA
+    Thoemmes, F. \& \textbf{Liao, W.} (2013, May). Propensity score matching (with multilevel data) using SPSS and R. Paper presented at the Modern Modeling Methods Conference, Storrs, CT, USA
+
+    \vspace{\parskip}
+    
 \end{hangparas}
 
 %----------------------------------------------------------------------------------------
@@ -247,12 +251,12 @@ Thoemmes, F. \& \underline{Liao, W.} (2013, May). Propensity score matching (wit
 
 \section*{Computer Programs}
 
-\texttt{R} package for regression discontinuity design \years{2015-} \\
+R Package for Regression Discontinuity Designs \years{2015-} \\
 \textsf{
     with Dr. Thoemmes, F. \& Jin, Z.
 }
 
-\texttt{SPSS} plugin for propensity score matching \years{2013-2015} \\
+SPSS Plugin for Propensity Score matching \years{2013-2015} \\
 \textsf{with Dr. Thoemmes, F. \\
 \href{http://sourceforge.net/projects/psmspss/}{sourceforge.net}}
 
